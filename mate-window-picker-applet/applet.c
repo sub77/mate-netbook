@@ -163,7 +163,7 @@ cw_applet_fill (MatePanelApplet *applet,
   gtk_container_add (GTK_CONTAINER (applet), eb);
   gtk_container_set_border_width (GTK_CONTAINER (eb), 0);
 
-  tasks = app->tasks = task_list_get_default ();
+  tasks = 0;
   gtk_box_pack_start (GTK_BOX (eb), tasks, FALSE, FALSE, 0);
 
   title = app->title = task_title_new ();
