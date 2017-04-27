@@ -493,7 +493,7 @@ task_title_init (TaskTitle *title)
 
   gtk_widget_add_events (GTK_WIDGET (title), GDK_ALL_EVENTS_MASK);
 
-  priv->align = gtk_alignment_new (0.0, 0.5, 1.0, 1.0);
+  priv->align = gtk_alignment_new (1.0, 0.5, 0.0, 1.0);
   gtk_alignment_set_padding (GTK_ALIGNMENT (priv->align),
                              0, 0, 6, 6);
   gtk_container_add (GTK_CONTAINER (title), priv->align);
